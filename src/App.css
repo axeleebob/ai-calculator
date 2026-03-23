@@ -46,7 +46,7 @@
   aspect-ratio: 1;
   border: none;
   border-radius: 50%;
-  font-size: clamp(1rem, 5cqw, 2.2rem);
+  font-size: clamp(2rem, 10cqw, 4.4rem);
   font-weight: 400;
   cursor: pointer;
   transition: filter 0.1s;
@@ -71,11 +71,13 @@
 .btn-function {
   background: #a5a5a5;
   color: #1c1c1e;
+  font-size: clamp(3rem, 15cqw, 6.6rem);
 }
 
 .btn-operator {
   background: #ff9f0a;
   color: #fff;
+  font-size: clamp(3rem, 15cqw, 6.6rem);
 }
 
 .btn-operator.active {
