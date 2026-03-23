@@ -1,6 +1,7 @@
 .calculator {
   container-type: inline-size;
   width: min(90vw, 90vh, 480px);
+  height: min(90vh, 860px);
   background: #1c1c1e;
   border-radius: clamp(16px, 3vw, 28px);
   overflow: hidden;
@@ -12,6 +13,7 @@
 }
 
 .display {
+  flex: 1;
   padding: clamp(8px, 2vw, 16px) clamp(6px, 1.5vw, 12px) clamp(4px, 1vw, 8px);
   text-align: right;
   min-height: clamp(60px, 15vw, 120px);
