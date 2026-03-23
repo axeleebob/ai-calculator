@@ -1,26 +1,26 @@
 .calculator {
-  width: 320px;
+  width: min(90vw, 90vh, 480px);
   background: #1c1c1e;
-  border-radius: 24px;
+  border-radius: clamp(16px, 3vw, 28px);
   overflow: hidden;
   box-shadow: 0 24px 64px rgba(0, 0, 0, 0.6);
-  padding: 16px;
+  padding: clamp(10px, 2.5vw, 20px);
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: clamp(6px, 1.5vw, 14px);
 }
 
 .display {
-  padding: 12px 8px 4px;
+  padding: clamp(8px, 2vw, 16px) clamp(6px, 1.5vw, 12px) clamp(4px, 1vw, 8px);
   text-align: right;
-  min-height: 96px;
+  min-height: clamp(60px, 15vw, 120px);
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
 }
 
 .display-text {
-  font-size: clamp(2rem, 10vw, 3.5rem);
+  font-size: clamp(2rem, 8vw, 4.5rem);
   font-weight: 200;
   color: #fff;
   letter-spacing: -1px;
@@ -30,20 +30,20 @@
 .buttons {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: clamp(6px, 1.5vw, 14px);
 }
 
 .row {
   display: flex;
-  gap: 10px;
+  gap: clamp(6px, 1.5vw, 14px);
 }
 
 .btn {
   flex: 1;
-  height: 72px;
+  aspect-ratio: 1;
   border: none;
   border-radius: 50%;
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 4vw, 2rem);
   font-weight: 400;
   cursor: pointer;
   transition: filter 0.1s;
@@ -59,9 +59,10 @@
 
 .btn-wide {
   flex: 2.1;
-  border-radius: 36px;
+  border-radius: 500px;
   text-align: left;
-  padding-left: 26px;
+  padding-left: clamp(16px, 5%, 28px);
+  aspect-ratio: unset;
 }
 
 .btn-function {
