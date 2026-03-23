@@ -1,4 +1,5 @@
 .calculator {
+  container-type: inline-size;
   width: min(90vw, 90vh, 480px);
   background: #1c1c1e;
   border-radius: clamp(16px, 3vw, 28px);
@@ -20,7 +21,7 @@
 }
 
 .display-text {
-  font-size: clamp(2rem, 8vw, 4.5rem);
+  font-size: clamp(2rem, 12cqw, 5rem);
   font-weight: 200;
   color: #fff;
   letter-spacing: -1px;
@@ -43,7 +44,7 @@
   aspect-ratio: 1;
   border: none;
   border-radius: 50%;
-  font-size: clamp(1rem, 4vw, 2rem);
+  font-size: clamp(1rem, 5cqw, 2.2rem);
   font-weight: 400;
   cursor: pointer;
   transition: filter 0.1s;
