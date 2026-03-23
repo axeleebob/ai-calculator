@@ -71,7 +71,7 @@
 .btn-function {
   background: #a5a5a5;
   color: #1c1c1e;
-  font-size: clamp(3rem, 15cqw, 6.6rem);
+  font-size: clamp(3rem, 12cqw, 6.6rem);
 }
 
 .btn-operator {
